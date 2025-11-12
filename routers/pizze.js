@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
 
 //show
 router.get('/:id', (req, res) => {
-    res.send('pizza specifica' + req.params.id)
+    res.send('pizza specifica' + ' ' + req.params.id)
 });
 
 //store
