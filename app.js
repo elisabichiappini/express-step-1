@@ -1,12 +1,13 @@
 //importiamo express
-const express = requrie('express');
+const express = require('express');
 
-//inizializializziamo express come server
+//inizializziamo express come server
 const app = express();
 const port = 3000;
 app.get('/', (req, res) => {
     res.send('helloworld');
 });
 app.listen(port, () => {
-    console.log(`App listening port ${port}`);
+    console.log(`App listening port http://localhost:${port}`);
+    //la porta di default di express è 3000
 })
